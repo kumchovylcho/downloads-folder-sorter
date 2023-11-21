@@ -103,4 +103,5 @@ extensions = [
     "piskel",
     "7z",
     "msi",
+    "webp",
 ]

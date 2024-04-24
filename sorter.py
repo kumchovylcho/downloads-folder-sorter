@@ -21,7 +21,7 @@ def create_new_file_copy_name(directory_path: str, filename: str):
     strip_copied_filenames = lambda x: x.split(" - ")[0].rstrip()
 
     copy_count_pattern = re.compile(r'\((?P<number>\d+)\)')
-    filename, extension = filename.split(".")
+    filename, extension, *_ = filename.split(".")
 
     stripped_filename = strip_copied_filenames(filename)
 
